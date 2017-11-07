@@ -11,14 +11,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var timer:NSTimer!;  //! means 'i promise I'll initialize before use
+    var timer:Timer!;  //! means 'i promise I'll initialize before use
     
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds);
+        self.window = UIWindow.init(frame: UIScreen.main.bounds);
         
-        self.window?.backgroundColor = UIColor.whiteColor();
+        self.window?.backgroundColor = UIColor.white;
         
         let viewController:ViewController = ViewController();
         
@@ -31,9 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("AppDelegate.application():          Application launch complete");
         
         //Start the countdown timer
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1,
+        self.timer = Timer.scheduledTimer(timeInterval: 1,
                                                             target:       self,
-                                                            selector:     "displayAlert",
+                                                            selector:     #selector(AppDelegate.displayAlert),
                                                             userInfo:     nil,
                                                             repeats:      false);
         
@@ -46,23 +46,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("poo?");
         let alert:UIAlertController = UIAlertController(title:          "Displayed Message!",
                                                         message:        "Eww this is complicated...",
-                                                        preferredStyle: UIAlertControllerStyle.Alert);
+                                                        preferredStyle: UIAlertControllerStyle.alert);
         
         alert.addAction(UIAlertAction(title:   "Sorry, I'm made by Apple, so...",
-                                      style:   UIAlertActionStyle.Cancel,
+                                      style:   UIAlertActionStyle.cancel,
                                       handler: nil));
   
-        window?.rootViewController?.presentViewController(alert,
+        window?.rootViewController?.present(alert,
                                                           animated:true,
                                                           completion:nil);
         return;
     }
 
     
-    func applicationWillResignActive(application:    UIApplication) {return;}
-    func applicationDidEnterBackground(application:  UIApplication) {return;}
-    func applicationWillEnterForeground(application: UIApplication) {return;}
-    func applicationDidBecomeActive(application:     UIApplication) {return;}
-    func applicationWillTerminate(application:       UIApplication) {return;}
+    func applicationWillResignActive(_ application:    UIApplication) {return;}
+    func applicationDidEnterBackground(_ application:  UIApplication) {return;}
+    func applicationWillEnterForeground(_ application: UIApplication) {return;}
+    func applicationDidBecomeActive(_ application:     UIApplication) {return;}
+    func applicationWillTerminate(_ application:       UIApplication) {return;}
 }
 
