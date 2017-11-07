@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var timer:Timer!;  //! means 'i promise I'll initialize before use
+    @objc var timer:Timer!;  //! means 'i promise I'll initialize before use
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    func displayAlert() {
+    @objc func displayAlert() {
         print("poo?");
         let alert:UIAlertController = UIAlertController(title:          "Displayed Message!",
                                                         message:        "Eww this is complicated...",
