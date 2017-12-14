@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D010BD0F1FE20A42009773A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D010BD0C1FE20A42009773A2 /* Assets.xcassets */; };
 		D010BD101FE20A42009773A2 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D010BD0D1FE20A42009773A2 /* Base.lproj */; };
+		D010BD121FE20AF1009773A2 /* Stdcomments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010BD111FE20AF1009773A2 /* Stdcomments.swift */; };
 		D039B4BA1BF4D7950024005F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039B4B91BF4D7950024005F /* AppDelegate.swift */; };
 		D039B4BC1BF4D7950024005F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039B4BB1BF4D7950024005F /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -17,6 +18,7 @@
 		D010BD0B1FE20A42009773A2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "0_0 - UIAlertView/Base/Info.plist"; sourceTree = SOURCE_ROOT; };
 		D010BD0C1FE20A42009773A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "0_0 - UIAlertView/Base/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		D010BD0D1FE20A42009773A2 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "0_0 - UIAlertView/Base/Base.lproj"; sourceTree = SOURCE_ROOT; };
+		D010BD111FE20AF1009773A2 /* Stdcomments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stdcomments.swift; path = "0_0 - UIAlertView/Base/Stdcomments.swift"; sourceTree = SOURCE_ROOT; };
 		D039B4B61BF4D7950024005F /* 0_0 - UIAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0_0 - UIAlertView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D039B4B91BF4D7950024005F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D039B4BB1BF4D7950024005F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 				D010BD0C1FE20A42009773A2 /* Assets.xcassets */,
 				D010BD0D1FE20A42009773A2 /* Base.lproj */,
 				D010BD0B1FE20A42009773A2 /* Info.plist */,
+				D010BD111FE20AF1009773A2 /* Stdcomments.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				D039B4BC1BF4D7950024005F /* ViewController.swift in Sources */,
 				D039B4BA1BF4D7950024005F /* AppDelegate.swift in Sources */,
+				D010BD121FE20AF1009773A2 /* Stdcomments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
