@@ -16,8 +16,7 @@
  *      clearly communicates what is occuring here
  *
  *  @section    Opens
- *      button resp
- *      second form implement
+ *      none present
  *
  *  @section    Legal Disclaimer
  *      All contents of this source file and/or any other Jaostech related source files are the explicit property on Jaostech
@@ -89,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         alert.addAction(UIAlertAction(title:   "Sorry, I'm made by Apple, so...",
                                       style:   UIAlertActionStyle.cancel,
-                                      handler: nil));
+                                      handler: alertResp));
   
         window?.rootViewController?.present(alert,
                                                           animated:true,
@@ -97,6 +96,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return;
     }
 
+    
+    /********************************************************************************************************************************/
+    /** @fcn        func alertResp(action : UIAlertAction)
+     *  @brief      respond to alert button press
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    func alertResp(action : UIAlertAction) {
+        
+        print("The handler for the alert action was called");
+        
+        return;
+    }
+    
     
     func applicationWillResignActive(_ application:    UIApplication) {return;}
     func applicationDidEnterBackground(_ application:  UIApplication) {return;}
