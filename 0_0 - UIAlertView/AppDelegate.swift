@@ -16,8 +16,6 @@
  *      clearly communicates what is occuring here
  *
  *  @section    Opens
- *      fcn headers
- *      drop @objc's where possible
  *      button resp
  *      second form implement
  *
@@ -34,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    @objc var timer:Timer!;                                         /*  ! means 'i promise I'll initialize before use               */
+    var timer:Timer!;                                               /*  ! means 'i promise I'll initialize before use               */
     
 
     /********************************************************************************************************************************/
@@ -79,6 +77,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /** @fcn        func displayAlert()
      *  @brief      display a popup alert-view message
      *  @details    x
+     *
+     *  @note       '@objc' is required by Timer.scheduledimer to declare as exposed to Objective-C
      */
     /********************************************************************************************************************************/
     @objc func displayAlert() {
